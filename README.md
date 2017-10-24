@@ -1,6 +1,6 @@
 # Guestbook Project
 
-A simple commenting system. It requires having an account so you can sign in with your username.
+A simple commenting system. It requires an account so you can sign in with your username.
 
 #### Login page
 
