@@ -3,123 +3,34 @@
 <head>
 	<title> Create and account </title>
 	<meta charset="utf-8">
-	<style> 
-
-form{ 
-      width: 400px;   
-      height: 500px;
-	  font-family: "Helvetica Neue", Helvetica, sans-serif;
-      -webkit-font-smoothing: antialiased; 	  
-	  background: #F8F8F8;
-	  bottom:50px;
-	  left:50px;
-	  margin-bottom:100px;
-	  margin-left:100px;
-	  
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-}
-		     
-		
-fieldset{
-       
-          width: 300px;   
-          height: 400px;
-		  text-aling:right;
-		  border-bottom-width:thick;
-		  border-left-width:thick;
-		  border-top-width:thick;
-		  border-right-width:thick;
-		  border-color:#FFFDDA ;
-}
-
-input{
-       font-family: "Helvetica Neue", Helvetica, sans-serif;
-       font-size: 15px;
-       outline: none;
- }
- 
-input[type=text],
-input[type=password] {
-    color: #777;
-    padding-left: 10px;
-    margin: 10px;
-    margin-top: 12px;
-    margin-left: 18px;
-    width: 210px;
-    height: 28px;
-	border: 1px solid;
-    border-radius: 5px;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f8f8f8;
-}	
-	
-input[type=submit] {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 80px;
-    height: 30px;
-}	
-		</style>
-		
-<script language="JavaScript" type="text/javascript">
-function validateForm()
-{
-	<!-- Username validation -->
-	
-var x=document.forms["forma_2"]["username"].value;
-
-if  (!isNaN(x))
-  {
-  alert("Please Enter Only Characters");
-  document.forms["forma_2"]["username"].focus();
-  return false;
-  
-  }  
-if  ((x.length < 5) || (x.length > 15))
-  {
-  alert("Your username must be between 5 and 15 characters");
-  document.forms["forma_2"]["username"].focus();
-  return false;
-
-  } 
-
- 
-	<!-- Password validation -->
-
-var z=document.forms["forma_2"]["password"].value;
-
-if ( (z.length < 6) || (z.length > 14))
-  {
-  alert("Your Password must be between 6 and 14 character");
-  document.forms["forma_2"]["password"].focus();
-  return false;
-  }  
-
-    
- }
-</script>  
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/sign_up.css">
+	<script type="text/javascript" src="js/validate.js"></script>     
 </head>
-<body bgcolor="#FFFDDA">
-<div align="center" id="container" >
-<h1> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Your.Guestbook</h1>
-<form name="forma_2" method="post" onsubmit=" return validateForm();" action="signup.php">
-<br><br>
-<fieldset><legend><h4> SING UP </h4></legend>
-<table >
-	 <br><br><br>
-	 
-	 <tr><td> <input  placeholder="Username" type="text" name="username" id="username" required ></td></tr>
-	 
-	 <tr><td> <input  placeholder="Password" type="password" name="password" id="password" required></td></tr>
-	 
-	 <tr><td > <input type="submit" value="CREATE"  id="dimioyrgia"></td></tr>
-	  
-</table>
-	 
-</fieldset>
-</form>
-</div>
+
+
+<body>
+	<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">Your.Guestbook</span></h1>
+		</div>
+			
+		<form name="forma_2" method="post"  onsubmit=" return validateForm();" action="signup.php" >
+		<div class="login-box">
+				<div class="box-header">
+					<h2>SIGN UP</h2>
+				</div>
+				<label for="username">Username</label>
+				<br/>
+				<input placeholder="Username" type="text" name="username" id="username" required>
+				<br/>
+				<label for="password">Password</label>
+				<br/>
+				<input placeholder="Password" type="password" name="password" id="password" required>
+				<br/>
+				<button type="submit" value="CREATE"  id="dimioyrgia">Submit</button>
+		</div>
+	</div>
+	</form>
 </body>  
 </html>

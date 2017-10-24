@@ -46,52 +46,6 @@ a:hover {
 
 /* Layout */
 
-.DB-create{
-	background-color: #f2f2f2;
-	max-width: 340px;
-	margin: 0 auto;
-	position: relative;
-	top: 80px;
-	padding-bottom: 10px;
-	border-radius: 5px;
-	box-shadow: 0 5px 50px rgba(0,0,0,0.4);
-	text-align: center;
-	margin-top: 60px;
-}
-
-.account-header{
-	text-align: center;
-	padding-top: 10px;
-}
-
-.database-header{
-	margin-left: 70px;
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-
-#createdb{
-	margin-top: 0px;
-	border: 0;
-	border-radius: 2px;
-	color: white;
-	padding: 10px;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 0.7em;
-	letter-spacing: 1px;
-	background-color: #3333ff;
-	cursor:pointer;
-	outline: none;
-	
-	
-}
-
-#createdb:hover{
-	opacity: 0.7;
-	transition: 0.5s;
-}
-
 .container {
 	margin: 0;
 }
