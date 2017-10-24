@@ -5,3 +5,7 @@ A simple commenting system. It requires having an account so you can sign in wit
 #### Login page
 
 ![alt tag](https://github.com/gpasxalis/Guestbook-Project/blob/master/Screenshots/Login%20page.jpg)
+
+#### Sign-up page
+
+![alt tag](https://github.com/gpasxalis/Guestbook-Project/blob/master/Screenshots/sign%20up%20page.jpg)
