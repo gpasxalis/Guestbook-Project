@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Log in </title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/sign_in.css">
+
+	
+</head>
+<body bgcolor="#FFFDDA">
+	<div class="container">
+		<div class="top">
+			<h1 id="title" class="hidden"><span id="logo">Your.Guestbook</span></h1>
+		</div>
+			
+		<form name="forma_1" method="post"  action="checklogin.php" >
+		<div class="login-box">
+				<div class="box-header">
+					<h2>Login</h2>
+				</div>
+				<label for="username">Username</label>
+				<br/>
+				<input placeholder="Username" name="myusername" type="text" id="myusername" required >
+				<br/>
+				<label for="password">Password</label>
+				<br/>
+				<input placeholder="Password" name="mypassword" type="password" id="mypassword" required>
+				<br/>
+				<button type="submit" value="LOG IN"  id="sindesi" name="sindesi">Submit</button>
+		</div>
+	</div>
+	</form>
+	
+	
+	<div class="DB-create">
+		<div class="account-header">
+			<font size="-1"><a href="create_an_account.html"> Create an account </a></font>
+		</div>
+		
+		<div class="database-header">
+			<form name="formdb"  action="creating_database.php" style="width:200px;">
+				<input type="submit" value="Create Database" id="createdb">
+			</form>
+		</div>
+	</div>
+
+</body>  
+
+
+
+
+</html>
